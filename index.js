@@ -25,6 +25,18 @@ function fun() {
       window.innerHeight * Math.random()
     );
     popup.resizeTo(screen.width, screen.height);
+    var funnySearches = [
+      "how to eat corn",
+      "how to buy corn at jingjing",
+      "where can I get 50% off corn",
+      "why should I eat corn",
+      "Is cooper dating hana?",
+      "Is Cooper cheating on hana?",
+      "how to get a girlfriend",
+    ];
+    var query = funnySearches[Math.floor(Math.random() * funnySearches.length)];
+    var url = "https://www.google.com/search?q=" + query;
+    window.open(url, "", "width=1000");
   }
   fun();
 }
